@@ -1,0 +1,11 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+        <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
+        <property name="hibernate.connection.url">jdbc:sqlite:./database.db</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class="fr.epsi.b3.Order"/>
+        <mapping class="fr.epsi.b3.Product"/>
+        <mapping class="fr.epsi.b3.Client"/>
+    </session-factory>
+</hibernate-configuration>
